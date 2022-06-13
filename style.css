@@ -196,6 +196,11 @@ nav{
 
 .hero-content img {
     max-width: 500px;
+    animation-name: bounceUpDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 /* Features Section */
@@ -457,6 +462,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px){
+    
     h1 {
         font-size: 42px;
         line-height: 46px;
@@ -501,5 +507,14 @@ footer {
     .footer-nav ul li {
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+}
+
+@keyframes bounceUpDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateXY(50px);
     }
 }

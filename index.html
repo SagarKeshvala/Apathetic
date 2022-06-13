@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Apathetic</title>
 </head>
 <body>
-    <section class="hero">
-        <nav>
+    <section class="hero"data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <nav data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
             <div class="logo">
                 Apathetic
             </div>
@@ -31,9 +32,15 @@
             </ul>
         </nav>
         <div class="hero-content">
-            <h1>Apathetic changes the way trading is done</h1>
-            <p>Apathetic Automated Trading System is the first automated social trading platform built on AI, machine learning, and pattern recognition.</p>
-            <img src="images/Isolation-mode.svg" alt="">
+            <h1 
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            >Apathetic changes the way trading is done</h1>
+            <p data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">Apathetic Automated Trading System is the first automated social trading platform built on AI, machine learning, and pattern recognition.</p>
+            <img data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000" data-aos-offset="50" src="images/Isolation-mode.svg" alt="">
         </div>
     </section>
 
@@ -41,13 +48,13 @@
     <section class="features">
         <div class="container">
             <div class="feature-image">
-                <img src="images/feature.svg" alt="">
+                <img data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" data-aos-easing="ease-in-out" src="images/feature.svg" alt="">
             </div>
             <div class="feature-text">
                 <ul>
-                    <li><p>Apathetic uses deep learning to learn market movement for the past 10 to 15 years for the selected stock option.</p></li>
-                    <li><p>Chat rooms allow users to communicate with other investors and discuss potential investment opportunities and trends.</p></li>
-                    <li><p>We minimize emotions in the trading process. Once you choose your strategy, trade orders are made automatically. This means no more hesitation before trading or overtrading by buying and selling at every perceived opportunity.</p></li>
+                    <li data-aos="fade-left" data-aos-delay="300" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-out"><p>Apathetic uses deep learning to learn market movement for the past 10 to 15 years for the selected stock option.</p></li>
+                    <li data-aos="fade-left" data-aos-delay="600" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-out"><p>Chat rooms allow users to communicate with other investors and discuss potential investment opportunities and trends.</p></li>
+                    <li data-aos="fade-left" data-aos-delay="900" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-in-out"><p>We minimize emotions in the trading process. Once you choose your strategy, trade orders are made automatically. This means no more hesitation before trading or overtrading by buying and selling at every perceived opportunity.</p></li>
                 </ul>
             </div>
         </div>
@@ -170,5 +177,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
