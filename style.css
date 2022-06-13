@@ -340,9 +340,9 @@ nav{
 }
 
 .img-box {
-    width: 33.3%;
+    width: 31%;
     padding: 40px 70px;
-    margin: 20px 0px;
+    margin: 20px auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
