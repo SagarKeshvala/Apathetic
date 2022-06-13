@@ -230,6 +230,8 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .how-it-works .head .container {
@@ -245,6 +247,41 @@ nav{
 
 .how-it-works h2 {
     margin-bottom: 30px;
+}
+
+.left-side-img {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: -1;
+}
+
+.left-side-circle {
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    z-index: -1;
+}
+
+.left-side-img-2 {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    z-index: -1;
+}
+
+.right-side-shape {
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    z-index: -1;
+}
+
+.right-side-circle {
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    z-index: -1;
 }
 
 .step {
@@ -330,6 +367,23 @@ nav{
 footer {
     border-top: 1px solid var(--color-white);
     padding: 50px 0px;
+    position: relative;
+}
+
+.footer-left-shape {
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    max-height: 100%;
+    z-index: -1;
+}
+
+.footer-right-shape {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-height: 100%;
+    z-index: -1;
 }
 
 .footer-nav {
@@ -362,6 +416,7 @@ footer {
 .footer-credits span a:visited {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Media Queries */
