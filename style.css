@@ -259,6 +259,7 @@ nav{
     left: 0px;
     top: 150px;
     z-index: -1;
+    animation: bounceUpDown100 2s ease-in-out infinite alternate;
 }
 
 .left-side-circle {
@@ -266,6 +267,7 @@ nav{
     left: 0px;
     top: 60%;
     z-index: -1;
+    animation: bounceUpDown100 2.5s ease-in-out infinite alternate;
 }
 
 .left-side-img-2 {
@@ -273,6 +275,7 @@ nav{
     left: 0;
     top: 70%;
     z-index: -1;
+    animation: bounceUpDown100 2.1s ease-in-out infinite alternate;
 }
 
 .right-side-shape {
@@ -280,6 +283,7 @@ nav{
     right: 0px;
     top: 20%;
     z-index: -1;
+    animation: bounceUpDown100 2.1s ease-in-out infinite alternate;
 }
 
 .right-side-circle {
@@ -287,6 +291,7 @@ nav{
     top: 80%;
     right: 0px;
     z-index: -1;
+    animation: bounceUpDown100 3s ease-in-out infinite alternate;
 }
 
 .step {
@@ -516,5 +521,14 @@ footer {
     }
     100% {
         transform: translateXY(50px);
+    }
+}
+
+@keyframes bounceUpDown100 {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateXY(100px);
     }
 }
