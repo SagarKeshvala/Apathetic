@@ -15,6 +15,7 @@ body {
     font-family: 'Poppins', sans-serif;
     --h1-size: 48px;
     --h2-size: 6.4rem;
+    --h4-size: 60px;
     --p-size: 16px;
     background-color: var(--color-black);
     color: var(--color-white);
@@ -428,6 +429,99 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* PRICING PAGE STYLES  */
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.price-card {
+    width: 350px;
+    background-color: #5A7AFF;
+    padding: 40px;
+}
+
+.package-name,.price {
+    text-align: center;
+}
+
+.price {
+    font-size: var(--h4-size);
+    margin-top: 10px;
+}
+
+.pricing-divider {
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.package-yellow-text {
+    color: #FFDA00;
+    font-weight: 600;
+}
+
+.package-text ul {
+    margin: 20px auto;
+    margin-left: 15px;
+}
+
+.novice-trial {
+    background-color: var(--color-purple);
+}
+
+.owl-carousel {
+    width: 80%;
+}
+
+.owl-item {
+    z-index: -1;
+    transform: scale(70%) !important;
+}
+
+.owl-item:nth-child(4) {
+    transform: scale(65%) !important;
+}
+
+.owl-item:nth-child(3) {
+    z-index: -2;
+}
+
+.owl-item:nth-child(4) {
+    z-index: -3;
+}
+
+.owl-item.active.center {
+    z-index: 1;
+    transform:  scale(90%) !important;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 80px;
+    display: flex;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 45%;
+}
+
+.owl-prev {
+    left: -30px;
+}
+
+.owl-next {
+    right: -100px;
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
