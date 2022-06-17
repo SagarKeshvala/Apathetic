@@ -444,7 +444,9 @@ footer {
 .price-card {
     width: 350px;
     background-color: #5A7AFF;
-    padding: 40px;
+    padding: 30px;
+    transition: all 1s ease-in-out;
+    max-height: 700px;
 }
 
 .package-name,.price {
@@ -473,8 +475,20 @@ footer {
     margin-left: 15px;
 }
 
+.paper-trial {
+    background-color: #0C2775;
+}
+
 .novice-trial {
-    background-color: var(--color-purple);
+    background-color: #7B39E7;
+}
+
+.contact-price {
+    background-color: #E62B7C;
+}
+
+.contact-price h2 {
+    font-size: 38px;
 }
 
 .owl-carousel {
@@ -484,23 +498,23 @@ footer {
 .owl-item {
     z-index: -1;
     transform: scale(70%) !important;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(50%);
 }
 
 .owl-item:nth-child(4) {
     transform: scale(65%) !important;
+    z-index: -3;
 }
 
 .owl-item:nth-child(3) {
     z-index: -2;
 }
 
-.owl-item:nth-child(4) {
-    z-index: -3;
-}
-
 .owl-item.active.center {
     z-index: 1;
     transform:  scale(90%) !important;
+    filter: brightness(100%);
 }
 
 .owl-nav {
@@ -558,6 +572,10 @@ footer {
         font-size: 32px;
         line-height: 36px;
     }
+
+    .owl-next {
+        right: 0px;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -606,6 +624,19 @@ footer {
     .footer-nav ul li {
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    .price-card {
+        width: 260px;
+        padding: 20px;
+    }
+
+    .owl-next {
+        right: -20px;
+    }
+
+    .price {
+        font-size: 36px;
     }
 }
 

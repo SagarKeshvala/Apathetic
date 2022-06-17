@@ -3,7 +3,18 @@ $(document).ready(function(){
     nav: true,
     center: true,
     loop: false,
-    margin: -310
+    margin: -310,
+    slideTransition: 'ease-in-out',
+    responsive: {
+      0 : {
+        items: 1, 
+        loop: false,
+        margin: 10
+      },
+      600 : {
+        margin: -300
+      }
+    }
   });
 
 
