@@ -537,6 +537,29 @@ footer {
 }
 
 
+/* ABOUT US PAGE STYLES */
+.about {
+    margin-top: 50px;    
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero {
+    background-image: url(images/about-us-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
     .container {
@@ -575,6 +598,11 @@ footer {
 
     .owl-next {
         right: 0px;
+    }
+
+    .about {
+        margin-top: 50px;
+        margin-bottom: 50px;    
     }
 }
 
